@@ -111,7 +111,7 @@
 		EB7354C2130E688300D6C2D8 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		EBA2F87C1379AA5C002E5AD4 /* CoreTestAllocator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CoreTestAllocator.c; path = CoreTestAllocator/CoreTestAllocator.c; sourceTree = "<group>"; };
 		EBA2F87D1379AA5C002E5AD4 /* CoreTestAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreTestAllocator.h; path = CoreTestAllocator/CoreTestAllocator.h; sourceTree = "<group>"; };
-		EBB1ADD81312A7B6006476A7 /* libCoreJSON (iOS).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libCoreJSON (iOS).a"; path = libCoreJSON_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB1ADD81312A7B6006476A7 /* libCoreJSON_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreJSON_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB1ADE11312A9ED006476A7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		EBB1AE7E1312B683006476A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EBB81049130BEC3E00CF5EF8 /* CoreJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,7 +223,7 @@
 			children = (
 				EBB81049130BEC3E00CF5EF8 /* CoreJSON.framework */,
 				EBB8105E130BEC3E00CF5EF8 /* CoreJSONTests.octest */,
-				EBB1ADD81312A7B6006476A7 /* libCoreJSON (iOS).a */,
+				EBB1ADD81312A7B6006476A7 /* libCoreJSON_iOS.a */,
 				3F73772C19F83F5B00D35AEF /* libCoreJSON.dylib */,
 			);
 			name = Products;
@@ -369,7 +369,7 @@
 			);
 			name = CoreJSON_iOS;
 			productName = CoreJSON;
-			productReference = EBB1ADD81312A7B6006476A7 /* libCoreJSON (iOS).a */;
+			productReference = EBB1ADD81312A7B6006476A7 /* libCoreJSON_iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EBB81048130BEC3E00CF5EF8 /* CoreJSON */ = {
