@@ -295,6 +295,9 @@ inline int __JSONParserAppendMapEnd(void *context) {
           success = 1;
         }
         CFAllocatorDeallocate(entry->allocator, keys);
+      } else {
+        json->elements[entry->index] = CFDictionaryCreate(json->allocator, NULL, NULL, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+        success = 1;
       }
     } else {
       // TODO: The number of keys and values does not match
@@ -333,6 +336,9 @@ inline int __JSONParserAppendArrayEnd(void *context) {
       json->elements[entry->index] = CFArrayCreate(json->allocator, values, entry->valuesIndex, &kCFTypeArrayCallBacks);
       CFAllocatorDeallocate(entry->allocator, values);
       success = 1;
+    } else {
+      json->elements[entry->index] = CFArrayCreate(json->allocator, NULL, 0, &kCFTypeArrayCallBacks);
+      success = 1;  
     }
     __JSONStackEntryRelease(entry);
   }
