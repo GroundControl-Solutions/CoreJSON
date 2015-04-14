@@ -1,3 +1,5 @@
+Note: This is a public fork used internally by GroundControl Solutions. It may contain modifications or patches that diverge from the goals and intentions of the original project maintainers. Examine the commit log and use at your own risk.
+
 # CoreJSON Framework
 
 CoreJSON is iOS and OSX Core Foundation based fast parser and generator based on `libyajl` C library.
