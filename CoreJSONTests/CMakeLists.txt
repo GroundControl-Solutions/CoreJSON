@@ -7,8 +7,8 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../Win32\ dependencies/includ
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../Win32\ dependencies/lib/)
 
 set(COREJSONTESTS_SOURCE_FILES
-    CoreTestAllocator.c
-    CoreTestAllocator.
+    CoreTestAllocator/CoreTestAllocator.c
+    CoreTestAllocator/CoreTestAllocator.h
     CoreJSONTests.c
     CoreJSONTests.h
     main.c)

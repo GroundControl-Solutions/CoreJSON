@@ -20,7 +20,7 @@
 
 #include <CoreJSON/CoreJSON.h>
 #include "time.h"
-#include "CoreTestAllocator.h"
+#include "CoreTestAllocator/CoreTestAllocator.h"
 #include <CFExtension/CFETests.h>
 
 CFAllocatorRef setup_CoreJSONTests(void);
