@@ -6,25 +6,6 @@
 #include "CoreJSONTests.h"
 #include <CFExtension/CFExtension.h>
 
-CFAllocatorRef setup_CoreJSONTests(void)
-{
-	return TestAllocatorCreate();
-}
-
-void tearDown(CFAllocatorRef allocator)
-{
-	CFETestBegin();
-
-	CFETestTrue(TestAllocatorGetAllocationsCount(allocator) > 0, CFSTR("Allocations count not greater than 0."))
-	CFETestTrue(TestAllocatorGetDeallocationsCount(allocator) > 0, CFSTR("Deallocations count not greater than 0."));
-
-	if(TestAllocatorGetAllocationsCount(allocator) != TestAllocatorGetDeallocationsCount(allocator))
-		TestAllocatorPrintAddressesAndBacktraces(allocator);
-	CFETestEqual(TestAllocatorGetAllocationsCount(allocator), TestAllocatorGetDeallocationsCount(allocator), CFSTR("Allocations count not equal to deallocations count."));
-
-	CFETestEnd();
-}
-
 void testGenerator(void)
 {
 	CFETestBegin();
