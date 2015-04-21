@@ -96,10 +96,21 @@ void testUTF8Strings(void)
 {
 	CFETestBegin();
 
+	CFDataRef expectedData = CFDataCreateFromHexadecimalStringRepresentation(CFSTR("61E280996C61"));
+	CFStringRef expectedString = CFDataCopyUTF8String(expectedData);
+	CFMutableArrayRef expected = CFArrayCreateMutable(kCFAllocatorDefault, 1, &kCFTypeArrayCallBacks);
+	CFArrayAppendValue(expected, expectedString);
+
+	CFRelease(expectedData);
+
 	CFErrorRef error;
-	CFArrayRef array = JSONCreateWithString(kCFAllocatorDefault, CFSTR("[\"a’la\"]"), kJSONReadOptionsDefault, &error);
+	CFDataRef utf8data = CFDataCreateFromHexadecimalStringRepresentation(CFSTR("5B2261E280996C61225D"));
+	CFStringRef utf8string = CFDataCopyUTF8String(utf8data);
+	CFArrayRef array = JSONCreateWithString(kCFAllocatorDefault, utf8string, kJSONReadOptionsDefault, &error);
 	CFETestNotNull(array, CFSTR("Failed to create array."));
-	CFShow(array);
+	CFETestEqualObjects(expected, array, CFSTR("Test array doesn't match expected."));
+
+	CFRelease(expected);
 	CFRelease(array);
 
 	CFETestEnd();
@@ -134,15 +145,11 @@ void testFloats(void)
 {
 	CFETestBegin();
 
-	float float1 = 3.14159265f;
-	float float2 = 1.61803399f;
-	float float3 = -57.2957795f;
-
 	CFMutableArrayRef expected = CFArrayCreateMutable(kCFAllocatorDefault, 3, &kCFTypeArrayCallBacks);
 
-	CFArrayAppendValue(expected, CFNumberCreateWithFloat(3.14159265f));
-	CFArrayAppendValue(expected, CFNumberCreateWithFloat(1.61803399f));
-	CFArrayAppendValue(expected, CFNumberCreateWithFloat(-57.2957795f));
+	CFArrayAppendValue(expected, CFNumberCreateWithDouble(3.14159265));
+	CFArrayAppendValue(expected, CFNumberCreateWithDouble(1.61803399));
+	CFArrayAppendValue(expected, CFNumberCreateWithDouble(-57.2957795));
 
 	CFErrorRef error;
 	CFArrayRef array = JSONCreateWithString(kCFAllocatorDefault, CFSTR("[3.14159265, 1.61803399, -57.2957795]"), kJSONReadOptionsDefault, &error);

@@ -2,12 +2,11 @@
 // Created by mitchell on 4/21/2015.
 //
 
+#include <CoreJSON/CoreJSON-Prefix.pch>
 #include "CoreJSONTests.h"
 
 int main(int argc, char** argv)
 {
-//	CFAllocatorRef allocator = setup_CoreJSONTests();
-
 	CFETestInit();
 
 	testGenerator();
