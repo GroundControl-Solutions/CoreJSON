@@ -29,14 +29,11 @@ void testGenerator(void)
 {
 	CFETestBegin();
 
-	CFUUIDRef uuid = CFUUIDCreate(NULL);
-
-	CFMutableStringRef expected = CFStringCreateMutableCopy(kCFAllocatorDefault, 0, CFSTR("{\"uuid\":\""));
-	CFStringRef uuidString = CFUUIDCreateString(kCFAllocatorDefault, uuid);
-	CFStringAppend(expected, uuidString);
-	CFStringAppend(expected, CFSTR("\",\"number\":9223372036854775807}"));
-	CFRelease(uuidString);
-
+	CFUUIDRef uuid = CFUUIDCreateFromString(kCFAllocatorDefault, CFSTR("3DE58A99-5619-43D0-93FB-DCE82EB17BD3"));
+	
+	CFStringRef expected1 = CFSTR("{\"uuid\":\"3DE58A99-5619-43D0-93FB-DCE82EB17BD3\",\"number\":9223372036854775807}");
+	CFStringRef expected2 = CFSTR("{\"number\":9223372036854775807,\"uuid\":\"3DE58A99-5619-43D0-93FB-DCE82EB17BD3\"}");
+	
 	CFMutableDictionaryRef dict = CFDictionaryCreateMutable(kCFAllocatorDefault, 2, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
 	long long number = 9223372036854775807;
 	CFDictionaryAddValue(dict, CFSTR("number"), CFNumberCreateWithLongLong(number));
@@ -49,7 +46,7 @@ void testGenerator(void)
 	CFRelease(dict);
 
 	CFETestNotNull(json, CFSTR("Failed to create JSON string."));
-	CFETestEqualObjects(expected, json, CFSTR("Test string doesn't match expected."));
+	CFETestTrue(CFEqual(json, expected1) || CFEqual(json, expected2), CFSTR("Test string doesn't match any possible expected."));
 
 	CFRelease(json);
 
