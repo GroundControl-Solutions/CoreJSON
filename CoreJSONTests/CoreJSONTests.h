@@ -18,10 +18,18 @@
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
-#import "CoreJSON.h"
-#import "time.h"
-#import "CoreTestAllocator.h"
+#include <CoreJSON/CoreJSON.h>
+#include "time.h"
+#include "CoreTestAllocator.h"
+#include <CFExtension/CFETests.h>
+
+CFAllocatorRef setup_CoreJSONTests(void);
+void tearDown(CFAllocatorRef allocator);
+void testGenerator(void);
+void testSimpleStuff(void);
+void testUTF8Strings(void);
+void testLargeNumbers(void);
+void testFloats(void);
 
 #define MAX_FRAMES 100
 
@@ -47,9 +55,9 @@
 //  return symbol;
 //}
 
-@interface CoreJSONTests : SenTestCase {
-@private
-  CFAllocatorRef testAllocator;
-}
-
-@end
+//@interface CoreJSONTests : SenTestCase {
+//@private
+//  CFAllocatorRef testAllocator;
+//}
+//
+//@end
