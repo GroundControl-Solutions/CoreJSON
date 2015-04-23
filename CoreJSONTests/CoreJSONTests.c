@@ -2,7 +2,10 @@
 // Created by mitchell on 4/21/2015.
 //
 
+#ifdef __MINGW32__
 #include <CoreJSON/CoreJSON-Prefix.pch>
+#endif
+
 #include "CoreJSONTests.h"
 #include <CFExtension/CFExtension.h>
 
