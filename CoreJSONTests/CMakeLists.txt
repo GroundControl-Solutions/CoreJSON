@@ -9,6 +9,7 @@ link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../Win32\ dependencies/lib/)
 set(COREJSONTESTS_SOURCE_FILES
     CoreJSONTests.c
     CoreJSONTests.h
+    CoreJsonTests-Prefix.pch
     main.c)
 
 add_executable(CoreJSONTests ${COREJSONTESTS_SOURCE_FILES})

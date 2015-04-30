@@ -2,6 +2,11 @@
 // Prefix header for all source files of the 'CoreJSONTests' target in the 'CoreJSONTests' project
 //
 
+#ifndef COREJSONTESTS_COREJSONTESTSPREFIX_PCH
+#define COREJSONTESTS_COREJSONTESTSPREFIX_PCH
+
 #ifdef __OBJC__
   #import <Cocoa/Cocoa.h>
+#endif
+
 #endif
