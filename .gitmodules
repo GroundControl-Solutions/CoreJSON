@@ -1,6 +1,6 @@
 [submodule "YAJL/yajl"]
 	path = YAJL/yajl
-	url = git://github.com/lloyd/yajl.git
+url=git@github.com:GroundControl-Solutions/yajl.git
 [submodule "CoreJSONTests/CoreTestAllocator"]
 	path = CoreJSONTests/CoreTestAllocator
 	url = git://github.com/mirek/CoreTestAllocator.git
