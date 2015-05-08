@@ -157,8 +157,8 @@ __JSONRef   __JSONRelease          (__JSONRef    json);
 
 #pragma Public API
 
-CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error);
+CF_EXPORT CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error);
 //CFTypeRef     JSONCreateWithData       (CFAllocatorRef allocator, CFDataRef data);
 
-CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error);
+CF_EXPORT CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error);
 //CFDataRef     JSONCreateData           (CFAllocatorRef allocator, CFTypeRef value);

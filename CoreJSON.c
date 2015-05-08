@@ -18,6 +18,7 @@
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
+#include <CoreJSON/YAJL/include/yajl/yajl_tree.h>
 #include "CoreJSON.h"
 
 // Internal helper macro for appending elements
