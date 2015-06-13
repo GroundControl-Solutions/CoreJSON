@@ -528,7 +528,7 @@
 		EBB8103F130BEC3E00CF5EF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Inteliv Ltd";
 				TargetAttributes = {
 					3FDC6A901AE6FEFF004A4A31 = {
@@ -786,6 +786,7 @@
 				);
 				INFOPLIST_FILE = "CoreJSON/CoreJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -808,6 +809,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1090,6 +1092,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1157,6 +1160,7 @@
 				);
 				INFOPLIST_FILE = "CoreJSON/CoreJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1185,6 +1189,7 @@
 				);
 				INFOPLIST_FILE = "CoreJSON/CoreJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1207,6 +1212,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1229,6 +1235,7 @@
 					"-framework",
 					SenTestingKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.mirek.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
