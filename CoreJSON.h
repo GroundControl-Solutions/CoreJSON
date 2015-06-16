@@ -22,6 +22,8 @@
 #include <yajl/yajl_parse.h>
 #include <yajl/yajl_gen.h>
 
+#include "CJExport.h"
+
 #define CORE_JSON_STACK_INITIAL_SIZE              YAJL_MAX_DEPTH
 #define CORE_JSON_STACK_ENTRY_KEYS_INITIAL_SIZE   1024
 #define CORE_JSON_STACK_ENTRY_VALUES_INITIAL_SIZE 1024
@@ -157,8 +159,8 @@ __JSONRef   __JSONRelease          (__JSONRef    json);
 
 #pragma Public API
 
-CF_EXPORT CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error);
+CJ_EXPORT CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error);
 //CFTypeRef     JSONCreateWithData       (CFAllocatorRef allocator, CFDataRef data);
 
-CF_EXPORT CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error);
+CJ_EXPORT CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error);
 //CFDataRef     JSONCreateData           (CFAllocatorRef allocator, CFTypeRef value);

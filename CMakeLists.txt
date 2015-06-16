@@ -36,6 +36,8 @@ set(COREJSON_SOURCE_FILES
     YAJL/yajl/src/yajl_tree.c
     YAJL/yajl/src/yajl_version.c)
 
-add_library(CoreJSON ${COREJSON_SOURCE_FILES})
+add_library(CoreJSON ${COREJSON_SOURCE_FILES} CJExport.h)
+
+set_target_properties(CoreJSON PROPERTIES DEFINE_SYMBOL "CJ_BUILDING_CJ")
 
 target_link_libraries(CoreJSON ${CoreFoundation})
