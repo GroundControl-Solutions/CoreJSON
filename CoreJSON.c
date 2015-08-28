@@ -363,15 +363,15 @@ inline CFIndex __JSONElementsAppend(__JSONRef json, CFTypeRef value) {
 
 #pragma Memory allocation
 
-inline void *__JSONAllocatorAllocate(void *ctx, size_t sz) {
+void *__JSONAllocatorAllocate(void *ctx, size_t sz) {
   return CFAllocatorAllocate(ctx, sz, 0);
 }
 
-inline void __JSONAllocatorDeallocate(void *ctx, void *ptr) {
+void __JSONAllocatorDeallocate(void *ctx, void *ptr) {
   CFAllocatorDeallocate(ctx, ptr);
 }
 
-inline void *__JSONAllocatorReallocate(void *ctx, void *ptr, size_t sz) {
+void *__JSONAllocatorReallocate(void *ctx, void *ptr, size_t sz) {
   return CFAllocatorReallocate(ctx, ptr, sz, 0);
 }
 
