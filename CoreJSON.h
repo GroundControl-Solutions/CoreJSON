@@ -24,6 +24,9 @@
 
 #include "CJExport.h"
 
+#ifndef COREJSON_COREJSON_H
+#define COREJSON_COREJSON_H
+
 #define CORE_JSON_STACK_INITIAL_SIZE              YAJL_MAX_DEPTH
 #define CORE_JSON_STACK_ENTRY_KEYS_INITIAL_SIZE   1024
 #define CORE_JSON_STACK_ENTRY_VALUES_INITIAL_SIZE 1024
@@ -164,3 +167,5 @@ CJ_EXPORT CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef s
 
 CJ_EXPORT CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error);
 //CFDataRef     JSONCreateData           (CFAllocatorRef allocator, CFTypeRef value);
+
+#endif //COREJSON_COREJSON_H
