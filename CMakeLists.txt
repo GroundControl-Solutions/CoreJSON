@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(CoreJSON)
 
 set(COREJSON_SOURCE_FILES
+    ${version_rc}
     CJPlatformCompatibility.h
     CoreJSON.c
     CoreJSON.h
