@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F23C70F1CE6279900C39FCF /* CoreJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = EBB81076130BEC8C00CF5EF8 /* CoreJSON.c */; };
+		3F23C7101CE6279900C39FCF /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E141316C2AE00C173A9 /* yajl_alloc.c */; };
+		3F23C7111CE6279900C39FCF /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E161316C2AE00C173A9 /* yajl_buf.c */; };
+		3F23C7121CE6279900C39FCF /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E191316C2AE00C173A9 /* yajl_encode.c */; };
+		3F23C7131CE6279900C39FCF /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E1B1316C2AE00C173A9 /* yajl_gen.c */; };
+		3F23C7141CE6279900C39FCF /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E1C1316C2AE00C173A9 /* yajl_lex.c */; };
+		3F23C7151CE6279900C39FCF /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E1E1316C2AE00C173A9 /* yajl_parser.c */; };
+		3F23C7161CE6279900C39FCF /* yajl_version.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E201316C2AE00C173A9 /* yajl_version.c */; };
+		3F23C7171CE6279900C39FCF /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E211316C2AE00C173A9 /* yajl.c */; };
+		3F23C7181CE6279900C39FCF /* yajl_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = EB59CC2C1376F99B00C02960 /* yajl_tree.c */; };
+		3F23C71A1CE6279900C39FCF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB1ADE11312A9ED006476A7 /* CoreFoundation.framework */; };
+		3F23C71C1CE6279900C39FCF /* CoreJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB81077130BEC8C00CF5EF8 /* CoreJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F23C71D1CE6279900C39FCF /* yajl_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E151316C2AE00C173A9 /* yajl_alloc.h */; };
+		3F23C71E1CE6279900C39FCF /* yajl_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E171316C2AE00C173A9 /* yajl_buf.h */; };
+		3F23C71F1CE6279900C39FCF /* yajl_bytestack.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E181316C2AE00C173A9 /* yajl_bytestack.h */; };
+		3F23C7201CE6279900C39FCF /* yajl_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E1A1316C2AE00C173A9 /* yajl_encode.h */; };
+		3F23C7211CE6279900C39FCF /* yajl_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E1D1316C2AE00C173A9 /* yajl_lex.h */; };
+		3F23C7221CE6279900C39FCF /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EB173E1F1316C2AE00C173A9 /* yajl_parser.h */; };
 		3F73771519F83F5B00D35AEF /* CoreJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = EBB81076130BEC8C00CF5EF8 /* CoreJSON.c */; };
 		3F73771619F83F5B00D35AEF /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E141316C2AE00C173A9 /* yajl_alloc.c */; };
 		3F73771719F83F5B00D35AEF /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E161316C2AE00C173A9 /* yajl_buf.c */; };
@@ -87,6 +105,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F23C7291CE6279900C39FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F23C6FF1CE626FF00C39FCF;
+			remoteInfo = CFExtensionStatic;
+		};
 		3FDC6A9B1AE6FF64004A4A31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBB8103F130BEC3E00CF5EF8 /* Project object */;
@@ -137,6 +162,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F23C7261CE6279900C39FCF /* libCoreJSON_static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreJSON_static.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F73772C19F83F5B00D35AEF /* libCoreJSON.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreJSON.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDC6A911AE6FEFF004A4A31 /* CoreJSONTestsC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreJSONTestsC; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDC6A931AE6FEFF004A4A31 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -183,6 +209,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F23C7191CE6279900C39FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F23C71A1CE6279900C39FCF /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F73771F19F83F5B00D35AEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */,
+				3F23C72A1CE6279900C39FCF /* libCFExtensionStatic.a */,
 				3FDC6AA61AE6FF7A004A4A31 /* CFExtensionTests */,
 			);
 			name = Products;
@@ -319,6 +354,7 @@
 				EBB1ADD81312A7B6006476A7 /* libCoreJSON_iOS.a */,
 				3F73772C19F83F5B00D35AEF /* libCoreJSON.dylib */,
 				3FDC6A911AE6FEFF004A4A31 /* CoreJSONTestsC */,
+				3F23C7261CE6279900C39FCF /* libCoreJSON_static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,6 +423,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3F23C71B1CE6279900C39FCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F23C71C1CE6279900C39FCF /* CoreJSON.h in Headers */,
+				3F23C71D1CE6279900C39FCF /* yajl_alloc.h in Headers */,
+				3F23C71E1CE6279900C39FCF /* yajl_buf.h in Headers */,
+				3F23C71F1CE6279900C39FCF /* yajl_bytestack.h in Headers */,
+				3F23C7201CE6279900C39FCF /* yajl_encode.h in Headers */,
+				3F23C7211CE6279900C39FCF /* yajl_lex.h in Headers */,
+				3F23C7221CE6279900C39FCF /* yajl_parser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F73772119F83F5B00D35AEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +482,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3F23C70D1CE6279900C39FCF /* CoreJSON_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F23C7231CE6279900C39FCF /* Build configuration list for PBXNativeTarget "CoreJSON_static" */;
+			buildPhases = (
+				3F23C70E1CE6279900C39FCF /* Sources */,
+				3F23C7191CE6279900C39FCF /* Frameworks */,
+				3F23C71B1CE6279900C39FCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreJSON_static;
+			productName = CoreJSON;
+			productReference = 3F23C7261CE6279900C39FCF /* libCoreJSON_static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3F73771319F83F5B00D35AEF /* CoreJSON_dylib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F73772919F83F5B00D35AEF /* Build configuration list for PBXNativeTarget "CoreJSON_dylib" */;
@@ -558,12 +625,20 @@
 				EBB8105D130BEC3E00CF5EF8 /* CoreJSONTests */,
 				EBB1ADD71312A7B6006476A7 /* CoreJSON_iOS */,
 				3F73771319F83F5B00D35AEF /* CoreJSON_dylib */,
+				3F23C70D1CE6279900C39FCF /* CoreJSON_static */,
 				3FDC6A901AE6FEFF004A4A31 /* CoreJSONTestsC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3F23C72A1CE6279900C39FCF /* libCFExtensionStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libCFExtensionStatic.a;
+			remoteRef = 3F23C7291CE6279900C39FCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -618,6 +693,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F23C70E1CE6279900C39FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F23C70F1CE6279900C39FCF /* CoreJSON.c in Sources */,
+				3F23C7101CE6279900C39FCF /* yajl_alloc.c in Sources */,
+				3F23C7111CE6279900C39FCF /* yajl_buf.c in Sources */,
+				3F23C7121CE6279900C39FCF /* yajl_encode.c in Sources */,
+				3F23C7131CE6279900C39FCF /* yajl_gen.c in Sources */,
+				3F23C7141CE6279900C39FCF /* yajl_lex.c in Sources */,
+				3F23C7151CE6279900C39FCF /* yajl_parser.c in Sources */,
+				3F23C7161CE6279900C39FCF /* yajl_version.c in Sources */,
+				3F23C7171CE6279900C39FCF /* yajl.c in Sources */,
+				3F23C7181CE6279900C39FCF /* yajl_tree.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F73771419F83F5B00D35AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,6 +829,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F23C7241CE6279900C39FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreJSON-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/YAJL/include\"",
+					"$(PROJECT_DIR)/..",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SEPARATE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3F23C7251CE6279900C39FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreJSON-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/YAJL/include\"",
+					"$(PROJECT_DIR)/..",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SEPARATE_STRIP = NO;
+			};
+			name = Release;
+		};
 		3F73772A19F83F5B00D35AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1079,6 +1241,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F23C7231CE6279900C39FCF /* Build configuration list for PBXNativeTarget "CoreJSON_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F23C7241CE6279900C39FCF /* Debug */,
+				3F23C7251CE6279900C39FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F73772919F83F5B00D35AEF /* Build configuration list for PBXNativeTarget "CoreJSON_dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
