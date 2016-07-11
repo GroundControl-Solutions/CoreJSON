@@ -595,7 +595,7 @@
 		EBB8103F130BEC3E00CF5EF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Inteliv Ltd";
 				TargetAttributes = {
 					3FDC6A901AE6FEFF004A4A31 = {
@@ -847,7 +847,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -882,7 +882,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,7 +917,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -952,7 +952,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1037,7 +1037,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1064,7 +1064,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
