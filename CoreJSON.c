@@ -611,6 +611,9 @@ inline CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, J
 //  yajlGenConfig.beautify     = options | kJSONWriteOptionIndent ? 1 : 0;
 //  yajlGenConfig.indentString = options | kJSONWriteOptionIndent ? "  " : 0;
   yajl_gen yajlGen = yajl_gen_alloc(&yajlAllocFuncs);
+  if (options | kJSONWriteOptionIndent) {
+    yajl_gen_config(yajlGen, yajl_gen_beautify, true);
+  }
   __JSONGeneratorAppendValue(allocator, &yajlGen, value);
   const unsigned char *buffer = NULL;
   size_t length = 0;
