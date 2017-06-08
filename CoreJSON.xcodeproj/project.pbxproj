@@ -126,13 +126,6 @@
 			remoteGlobalIDString = 3FD4A1E219896A8A0000216E;
 			remoteInfo = CFExtension;
 		};
-		3FDC6AA51AE6FF7A004A4A31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3FD4A20E198AA5FD0000216E;
-			remoteInfo = CFExtensionTests;
-		};
 		3FDC6AA71AE6FF7F004A4A31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
@@ -280,7 +273,6 @@
 			children = (
 				3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */,
 				3F23C72A1CE6279900C39FCF /* libCFExtensionStatic.a */,
-				3FDC6AA61AE6FF7A004A4A31 /* CFExtensionTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -595,7 +587,7 @@
 		EBB8103F130BEC3E00CF5EF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Inteliv Ltd";
 				TargetAttributes = {
 					3FDC6A901AE6FEFF004A4A31 = {
@@ -644,13 +636,6 @@
 			fileType = "compiled.mach-o.dylib";
 			path = libCFExtension.dylib;
 			remoteRef = 3FDC6AA31AE6FF7A004A4A31 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3FDC6AA61AE6FF7A004A4A31 /* CFExtensionTests */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = CFExtensionTests;
-			remoteRef = 3FDC6AA51AE6FF7A004A4A31 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1079,12 +1064,18 @@
 		EBB8106E130BEC3E00CF5EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1111,12 +1102,18 @@
 		EBB8106F130BEC3E00CF5EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
