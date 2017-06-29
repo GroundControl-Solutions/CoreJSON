@@ -46,7 +46,6 @@
 		3FDC6A941AE6FEFF004A4A31 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC6A931AE6FEFF004A4A31 /* main.c */; };
 		3FDC6A9A1AE6FF09004A4A31 /* CoreJSONTests.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC6A981AE6FF09004A4A31 /* CoreJSONTests.c */; };
 		3FDC6A9D1AE6FF67004A4A31 /* libCoreJSON.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F73772C19F83F5B00D35AEF /* libCoreJSON.dylib */; };
-		3FDC6AA91AE6FF89004A4A31 /* libCFExtension.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */; };
 		3FDC6AAD1AE6FFAB004A4A31 /* CoreTestAllocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC6AAB1AE6FFAB004A4A31 /* CoreTestAllocator.c */; };
 		EB173E221316C2AE00C173A9 /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E141316C2AE00C173A9 /* yajl_alloc.c */; };
 		EB173E231316C2AE00C173A9 /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = EB173E141316C2AE00C173A9 /* yajl_alloc.c */; };
@@ -105,33 +104,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F23C7291CE6279900C39FCF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3F23C6FF1CE626FF00C39FCF;
-			remoteInfo = CFExtensionStatic;
-		};
 		3FDC6A9B1AE6FF64004A4A31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBB8103F130BEC3E00CF5EF8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3F73771319F83F5B00D35AEF;
 			remoteInfo = CoreJSON_dylib;
-		};
-		3FDC6AA31AE6FF7A004A4A31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3FD4A1E219896A8A0000216E;
-			remoteInfo = CFExtension;
-		};
-		3FDC6AA71AE6FF7F004A4A31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3FD4A1E119896A8A0000216E;
-			remoteInfo = CFExtension;
 		};
 		EBB81060130BEC3E00CF5EF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -161,7 +139,6 @@
 		3FDC6A931AE6FEFF004A4A31 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3FDC6A981AE6FF09004A4A31 /* CoreJSONTests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CoreJSONTests.c; sourceTree = "<group>"; };
 		3FDC6A991AE6FF09004A4A31 /* CoreJSONTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJSONTests.h; sourceTree = "<group>"; };
-		3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CFExtension.xcodeproj; path = ../CFExtension/CFExtension.xcodeproj; sourceTree = "<group>"; };
 		3FDC6AAB1AE6FFAB004A4A31 /* CoreTestAllocator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CoreTestAllocator.c; path = CoreTestAllocator/CoreTestAllocator.c; sourceTree = "<group>"; };
 		3FDC6AAC1AE6FFAB004A4A31 /* CoreTestAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreTestAllocator.h; path = CoreTestAllocator/CoreTestAllocator.h; sourceTree = "<group>"; };
 		EB173E141316C2AE00C173A9 /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yajl_alloc.c; path = YAJL/yajl/src/yajl_alloc.c; sourceTree = SOURCE_ROOT; };
@@ -222,7 +199,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDC6AA91AE6FF89004A4A31 /* libCFExtension.dylib in Frameworks */,
 				3FDC6A9D1AE6FF67004A4A31 /* libCoreJSON.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,15 +242,6 @@
 			);
 			name = CoreJSONTestsC;
 			path = CoreJSONTests;
-			sourceTree = "<group>";
-		};
-		3FDC6A9F1AE6FF7A004A4A31 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */,
-				3F23C72A1CE6279900C39FCF /* libCFExtensionStatic.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3FDC6AAA1AE6FF9A004A4A31 /* Supporting Files */ = {
@@ -328,7 +295,6 @@
 		EBB8103D130BEC3E00CF5EF8 = {
 			isa = PBXGroup;
 			children = (
-				3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */,
 				EBB81052130BEC3E00CF5EF8 /* CoreJSON */,
 				EBB81063130BEC3E00CF5EF8 /* CoreJSONTests */,
 				3FDC6A921AE6FEFF004A4A31 /* CoreJSONTestsC */,
@@ -519,7 +485,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3FDC6AA81AE6FF7F004A4A31 /* PBXTargetDependency */,
 				3FDC6A9C1AE6FF64004A4A31 /* PBXTargetDependency */,
 			);
 			name = CoreJSONTestsC;
@@ -605,12 +570,6 @@
 			mainGroup = EBB8103D130BEC3E00CF5EF8;
 			productRefGroup = EBB8104A130BEC3E00CF5EF8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3FDC6A9F1AE6FF7A004A4A31 /* Products */;
-					ProjectRef = 3FDC6A9E1AE6FF7A004A4A31 /* CFExtension.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EBB81048130BEC3E00CF5EF8 /* CoreJSON */,
@@ -622,23 +581,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3F23C72A1CE6279900C39FCF /* libCFExtensionStatic.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libCFExtensionStatic.a;
-			remoteRef = 3F23C7291CE6279900C39FCF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3FDC6AA41AE6FF7A004A4A31 /* libCFExtension.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libCFExtension.dylib;
-			remoteRef = 3FDC6AA31AE6FF7A004A4A31 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBB81047130BEC3E00CF5EF8 /* Resources */ = {
@@ -781,11 +723,6 @@
 			isa = PBXTargetDependency;
 			target = 3F73771319F83F5B00D35AEF /* CoreJSON_dylib */;
 			targetProxy = 3FDC6A9B1AE6FF64004A4A31 /* PBXContainerItemProxy */;
-		};
-		3FDC6AA81AE6FF7F004A4A31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CFExtension;
-			targetProxy = 3FDC6AA71AE6FF7F004A4A31 /* PBXContainerItemProxy */;
 		};
 		EBB81061130BEC3E00CF5EF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
