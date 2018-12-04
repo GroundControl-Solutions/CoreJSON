@@ -4,7 +4,7 @@ set(COREJSONTESTS_SOURCE_FILES
     ${version_rc}
     CoreJSONTests.c
     CoreJSONTests.h
-    CoreJsonTests-Prefix.pch
+    CoreJSONTests-Prefix.pch
     main.c)
 
 add_executable(CoreJSONTests ${COREJSONTESTS_SOURCE_FILES})
