@@ -474,7 +474,7 @@ inline bool __JSONParseWithString(__JSONRef json, CFStringRef string, CFErrorRef
   } else {
     
     // TODO: Couldn't allocate
-    *error = CFErrorCreate(json->allocator, CFSTR("com.github.mirek.CoreJSON"), -1, NULL);
+    if (error) *error = CFErrorCreate(json->allocator, CFSTR("com.github.mirek.CoreJSON"), -1, NULL);
     success = 0;
   }
   
