@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.11)
 project(CoreJSON)
 
 set(COREJSON_SOURCE_FILES
-    ${version_rc}
     CJPlatformCompatibility.h
     CoreJSON.c
     CoreJSON.h
@@ -36,6 +35,11 @@ add_library(CoreJSON ${COREJSON_SOURCE_FILES} CJExport.h)
 
 set_target_properties(CoreJSON PROPERTIES DEFINE_SYMBOL "CJ_BUILDING_CJ")
 
-target_link_libraries(CoreJSON ${CoreFoundation})
+target_link_libraries(CoreJSON
+      PUBLIC
+	${CoreFoundation}
+	PRIVATE
+	${version_rc}
+)
 
 target_include_directories(CoreJSON PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/YAJL/include)

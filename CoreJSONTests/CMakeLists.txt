@@ -1,7 +1,6 @@
 project(CoreJSONTests)
 
 set(COREJSONTESTS_SOURCE_FILES
-    ${version_rc}
     CoreJSONTests.c
     CoreJSONTests.h
     CoreJSONTests-Prefix.pch
