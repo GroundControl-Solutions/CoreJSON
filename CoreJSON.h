@@ -32,7 +32,9 @@
 #define CORE_JSON_STACK_ENTRY_VALUES_INITIAL_SIZE 1024
 #define CORE_JSON_ELEMENTS_INITIAL_SIZE           4096
 
+#ifdef __clang__
 #pragma mark Helper stack for parsing
+#endif
 
 // Internal stack to hold containers when parsing. Practically all functions in most
 // cases are O(1), unless internal buffers are full and need to be reallocated.
@@ -82,7 +84,9 @@ __JSONStackEntryRef __JSONStackPop              (__JSONStackRef stack);
 bool                __JSONStackAppendValueAtTop (__JSONStackRef stack, CFIndex value);
 bool                __JSONStackAppendKeyAtTop   (__JSONStackRef stack, CFIndex key);
 
+#ifdef __clang__
 #pragma mark Internal callbacks for libyajl parser
+#endif
 
 int __JSONParserAppendStringWithBytes    (void *context, const unsigned char *value, size_t length);
 int __JSONParserAppendNull               (void *context);
@@ -96,7 +100,9 @@ int __JSONParserAppendMapEnd             (void *context);
 int __JSONParserAppendArrayStart         (void *context);
 int __JSONParserAppendArrayEnd           (void *context);
 
+#ifdef __clang__
 #pragma mark Internal memory allocation
+#endif
 
 void *__JSONAllocatorAllocate   (void *ctx, size_t sz);
 void  __JSONAllocatorDeallocate (void *ctx, void *ptr);
@@ -136,11 +142,15 @@ typedef enum JSONWriteOptions {
   kJSONWriteOptionsDefault = 0
 } JSONWriteOptions;
 
+#ifdef __clang__
 #pragma mark Internal elements array support
+#endif
 
 CFIndex __JSONElementsAppend                 (__JSONRef json, CFTypeRef value);
 
+#ifdef __clang__
 #pragma mark Generator
+#endif
 
 void __JSONGeneratorAppendString             (CFAllocatorRef allocator, yajl_gen *g, CFStringRef value);
 void __JSONGeneratorAppendDoubleTypeNumber   (CFAllocatorRef allocator, yajl_gen *g, CFNumberRef value);
@@ -160,7 +170,9 @@ bool        __JSONParseWithString  (__JSONRef    json, CFStringRef string, CFErr
 CFTypeRef   __JSONCreateObject     (__JSONRef    json);
 __JSONRef   __JSONRelease          (__JSONRef    json);
 
+#ifdef __clang__
 #pragma mark Public API
+#endif
 
 CJ_EXPORT CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error);
 //CFTypeRef     JSONCreateWithData       (CFAllocatorRef allocator, CFDataRef data);
