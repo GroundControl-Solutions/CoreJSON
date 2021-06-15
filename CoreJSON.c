@@ -482,6 +482,12 @@ inline bool __JSONParseWithString(__JSONRef json, CFStringRef string, CFErrorRef
 }
 
 inline CFTypeRef JSONCreateWithString(CFAllocatorRef allocator, CFStringRef string, JSONReadOptions options, CFErrorRef *error) {
+
+	if (string == NULL) {
+		if (error) *error = CFErrorCreateWithUserInfoKeysAndValues(allocator, CFSTR("com.github.mirek.CoreJSON"), -1, (const void *) { kCFErrorDescriptionKey }, (const void *) { CFSTR("Invalid argument") }, 1);
+		return NULL;
+	}
+
   CFTypeRef result = NULL;
   __JSONRef json = NULL;
   if ((json = __JSONCreate(allocator, options))) {
@@ -602,6 +608,12 @@ inline void __JSONGeneratorAppendValue(CFAllocatorRef allocator, yajl_gen *g, CF
 }
 
 inline CFStringRef JSONCreateString(CFAllocatorRef allocator, CFTypeRef value, JSONWriteOptions options, CFErrorRef *error) {
+
+	if (value == NULL) {
+		if (error) *error = CFErrorCreateWithUserInfoKeysAndValues(allocator, CFSTR("com.github.mirek.CoreJSON"), -1, (const void *) { kCFErrorDescriptionKey }, (const void *) { CFSTR("Invalid argument") }, 1);
+		return NULL;
+	}
+
   yajl_alloc_funcs yajlAllocFuncs;
   yajlAllocFuncs.ctx = (void *)allocator;
   yajlAllocFuncs.malloc = __JSONAllocatorAllocate;
